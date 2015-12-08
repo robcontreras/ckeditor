@@ -3,19 +3,18 @@ Copyright (c) 2003-2011, CKSource - Frederico Knabben. All rights reserved.
 For licensing, see LICENSE.html or http://ckeditor.com/license
 */
 
+CKEDITOR.config.removePlugins = 'image';
+CKEDITOR.config.extraPlugins = 'image2,dialogui,lineutils,widget';
+
 CKEDITOR.editorConfig = function( config )
 {
   // Define changes to default configuration here. For example:
-  // config.language = 'fr';
+  //config.language = 'es';
   // config.uiColor = '#AADC6E';
 
-  /* Image2 Integration */
-  // remove older image plugin
-  config.removePlugins = 'image';
-
-  //add the improved image plugin along with its dependencies
-  config.extraPlugins = 'image2,dialogui,lineutils,widget';
-
+  // Image Alignments
+  // config.image2_alignClasses = [ 'align-left', 'align-center', 'align-right' ];
+   // config.plugins = 'dialogui,dialog,lineutils,widget,image2';
   /* Filebrowser routes */
   // The location of an external file browser, that should be launched when "Browse Server" button is pressed.
   config.filebrowserBrowseUrl = "/ckeditor/attachment_files";
@@ -121,4 +120,5 @@ CKEDITOR.editorConfig = function( config )
     { name: 'basicstyles', groups: [ 'basicstyles', 'cleanup' ], items: [ 'Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', '-', 'RemoveFormat' ] },
     { name: 'insert', items: [ 'Image', 'Table', 'HorizontalRule', 'SpecialChar' ] }
   ];
+
 };
