@@ -9,6 +9,13 @@ CKEDITOR.editorConfig = function( config )
   // config.language = 'fr';
   // config.uiColor = '#AADC6E';
 
+  /* Image2 Integration */
+  // remove older image plugin
+  config.removePlugins = 'image';
+
+  //add the improved image plugin along with its dependencies
+  config.plugins = 'image2,dialogui,lineutils,widget';
+
   /* Filebrowser routes */
   // The location of an external file browser, that should be launched when "Browse Server" button is pressed.
   config.filebrowserBrowseUrl = "/ckeditor/attachment_files";
