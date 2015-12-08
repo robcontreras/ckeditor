@@ -14,7 +14,7 @@ CKEDITOR.editorConfig = function( config )
   config.removePlugins = 'image';
 
   //add the improved image plugin along with its dependencies
-  config.plugins = 'image2,dialogui,lineutils,widget';
+  config.extraPlugins = 'image2,dialogui,lineutils,widget';
 
   /* Filebrowser routes */
   // The location of an external file browser, that should be launched when "Browse Server" button is pressed.
